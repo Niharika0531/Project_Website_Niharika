@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Astha</title>
+</head>
+<body>
+
+    <!--  NAVIGATION  -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <!--  HERO SECTION  -->
+    <header>
+        <h1>HELLO,I'm Niharika </h1>
+        <p>I'm a passionate web developer.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </header>
+
+    <!--  ABOUT SECTION  -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Niharika's Profile Picture" width="200" height="200">
+        <p>I am a web developer with experience in building responsive and user-friendly websites.</p>
+        <p>I enjoy creating web applications that provide great user experiences.</p>
+    </section>
+
+    <!--  SKILLS SECTION  -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Responsive Design</li>
+            <li>Version Control (Git)</li>
+        </ul>
+<table>
+    <thead>
+        <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+            <th>Years of Experience</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Python</td>
+            <td>Intermediate</td>
+            <td>1 Year</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Intermediate</td>
+            <td>1 Year</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Beginner</td>
+            <td>10 days</td>
+        </tr>
+         <tr>
+            <td>CSS</td>
+            <td>Beginner</td>
+            <td>10 days</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+            <td>10 days</td>
+        </tr>
+
+    </tbody>
+</table>
+        </ul>
+    </section>
+
+    <!--  PROJECTS SECTION  -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn">View Project</a>
+            <h3>Project 2</h3>
+            <p>A responsive portfolio website built with React.</p>
+            <a href="#" class="btn">View Project</a>
+            <h3>Project 3</h3>
+            <p>A basic calculator built using Python that performs addition, subtraction, multiplication, and division.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!--  Registration section  -->
+    <section id="registration">
+
+        <h1>Registration Form</h1>
+    
+    <form action="/submit" method="POST">
+ 
+    <!-- Text Input -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required>
+ 
+    <!-- Email Input -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+    
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
+ 
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
+
+    <!-- Radio Buttons (choose ONE) -->
+    <p>Experience Level:</p>
+    <input type="radio" id="beginner" name="level" value="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+ 
+    <!-- Checkboxes (choose MANY) -->
+    <p>Technologies:</p>
+    <input type="checkbox" id="python" name="tech" value="python">
+    <label for="python">Python</label>
+    <input type="checkbox" id="c" name="tech" value="c">
+    <label for="c">C</label>
+    <input type="checkbox" id="html" name="tech" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="tech" value="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="javascript" name="tech" value="javascript">
+    <label for="javascript">JavaScript</label>
+
+    <!-- Dropdown Select -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="">-- Choose Country --</option>
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+ 
+    <!-- Textarea (multi-line text) -->
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Type here..."></textarea>
+    
+    <!-- File Upload -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc">
+ 
+    <!-- Date Picker -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+ 
+    <!-- Submit Button -->
+    <button type="submit">Send Message</button>
+    <button type="reset">Clear Form</button>
+ 
+</form>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+        <p>&copy; 2026 Niharika. All rights reserved.</p>
+    </footer>
+</body>
+</html>
