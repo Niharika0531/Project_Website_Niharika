@@ -131,7 +131,7 @@ body {
     border:2px solid transparent;
     transition: background 0.3s;
 }
-.btn:primary{
+.btn-primary{
     background: var(--accent);
     color: var(--white);
 }
