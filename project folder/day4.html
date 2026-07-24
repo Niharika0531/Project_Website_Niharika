@@ -20,6 +20,7 @@
  
       <link rel="shortcut icon" href="./github.png" type="image/x-icon">
       <link rel="stylesheet" href="styles.css">
+      
 </head>
 <body lightgray;>      
 
@@ -28,10 +29,11 @@
         <nav class="navbar">
             <div class="logo">Niharika</div>
             <ul class="nav-links">
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+ 
             </ul>
             <!-- FOR DARK MODE -->
              <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">🌛</button>
@@ -40,7 +42,7 @@
               <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
                ☰
               </button>
-        </nav>
+        </nav>9
      </header>
  
      <!-- MAIN Content -->
@@ -81,12 +83,18 @@
             </div>
           </section>
  
-          <!-- PROJECTS SECTION -->
+        <!-- PROJECTS SECTION -->
         <section id="projects" class="projects-section">
             <h2>My Projects</h2>
+            <div class="project-filters">
+                <!-- The data-filter attribute is what our JS will read -->
+                 <button class="filter-btn active" data-filter="all">All</button>
+                 <button class="filter-btn active" data-filter="web">Web</button>
+                 <button class="filter-btn active" data-filter="design">Design</button>
+            </div>
             <div class="projects-grid">
                 <article class="project-card" data-category="web">
-                    <img src="profile.jpg" alt="Weather App screenshot">
+                    <img src="../images/weather.png" alt="Weather App screenshot">
                     <div class="project-card-body">
                         <h3>Weather App</h3>
                     <p>Real-time weather dashboard using OpenWeather API</p>
@@ -117,9 +125,11 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
              </form>
             </section>
+            </main>
+
             <!-- FOOTER -->
              <footer class="site-footer">
               <p> &copy; <span class="footer-year"></span> Niharika.
@@ -130,6 +140,8 @@
                     <a href="">LinkedIn</a>
                 </nav>
              </footer>
-      </main>
+             <!--Java Script will go here from Day 8!-->
+             <script src="script.js"></script>
+      
 </body>
 </html>
